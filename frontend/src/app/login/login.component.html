@@ -1,0 +1,42 @@
+<!-- <section>
+    <h1 class="text-center">Login</h1>
+    <form id="formData" (ngSubmit)="onSubmit(userName.value,passWord.value)">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" #userName ngModel>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="Password1" #passWord ngModel>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" ngModel> 
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section> -->
+
+    <div class="container">
+      <p class="text-center bold">For employee: email: employee password:qwerty, For admin : email: admin password: admin</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg p-5 mt-5 mb-5">
+                    <h1>Login </h1>
+                    
+                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit(userName.value,passWord.value)">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" class="form-control"  placeholder="name" formControlName="email" #userName required>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" placeholder="pass1234" formControlName="password" #passWord required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block my-3">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

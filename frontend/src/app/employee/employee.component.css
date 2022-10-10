@@ -1,0 +1,22 @@
+section{
+    margin: 2rem;
+}
+.flexbox{
+    display: flex;
+    justify-content: space-evenly;
+}
+.flexname{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    margin-right: 1rem;
+}
+.container{
+    margin: 0;
+}
+.modal.fade.show{
+    display: block;
+    background: rgba(0,0,0,0.4);
+}

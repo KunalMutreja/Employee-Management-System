@@ -1,0 +1,12 @@
+section {
+    margin: 2rem auto;
+    padding: 5rem;
+}
+
+.todo.done {
+    text-decoration: line-through;
+}
+img{
+    display: block;
+    margin: 0 auto;
+}

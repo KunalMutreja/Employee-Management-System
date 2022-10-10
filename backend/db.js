@@ -1,9 +1,9 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://Soumyadip:20csu214@cluster0.jm2zckm.mongodb.net/Hackaton',err =>{
-    if(!err){
+mongoose.connect('mongodb+srv://Soumyadip:20csu214@cluster0.jm2zckm.mongodb.net/Hackaton', err => {
+    if (!err) {
         console.log("Db Connected")
     }
-    else{
+    else {
         console.log("Not Connected")
     }
 })

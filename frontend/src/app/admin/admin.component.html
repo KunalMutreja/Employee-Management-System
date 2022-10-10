@@ -1,0 +1,33 @@
+ 
+
+<section>
+    <!-- <button type="button" class="btn btn-primary">Logout</button> -->
+    <div class="innersection">
+        <img src="https://i.imgur.com/s3xWBa9.png" alt="">
+        <table class="table" >
+            <thead>
+              <tr>
+                <th scope="col">Task</th>
+                <th scope="col">Content</th>
+                <th scope="col" style="
+                width: 40%;margin-right: 1rem;
+            ">Description</th>
+                <th scope="col">Assigned Time</th>
+                <th scope="col">Completion Time</th>
+                <th scope="col">Remove</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor = "let todo of todos; let i = index" class="todo {{(todo.completed? 'done': '')}}">
+                <th scope="row">{{i}}</th>
+                <td >{{todo.content}}</td>
+                <td>{{todo.description}}</td>
+                <td>{{todo.time}}</td>
+                <td>{{todo.completion}}</td>
+                <td><button type="button" style="margin-right: 1rem" (click)="deleteTodo(i)" class="btn btn-primary">Remove</button><button type="button" (click)="toggleDone(i)" class="btn btn-primary">Completed</button></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    
+</section>
